@@ -1,3 +1,4 @@
-<p>
-  username works!
-</p>
+<input type="text" class="form-control" (input)="checkUsername()" placeholder="Enter username" [(ngModel)] ="userName">
+<p>{{ userName }}</p>
+
+<button type="button" class="btn btn-primary" name="button" [disabled]="allowReset" (click)="resetUsername()">Reset Username</button>

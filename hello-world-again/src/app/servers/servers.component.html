@@ -1,7 +1,7 @@
-<p>
+<input type="text" class="form-control" name="" value="" (input)="onUpdateServername($event)">
 
-  <button class="btn btn-primary" [disabled]="allowNewServer">Add server</button>
-  <app-server></app-server>
-  servers works! This is another component
-</p>
-
+<p> {{ serverName }}</p>
+<button class="btn btn-primary" [disabled]="allowNewServer" (click)="onCreateServer()">Add server</button>
+<p>{{ serverCreationStatus }} </p>
+<app-server></app-server>
+servers works! This is another component
